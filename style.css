@@ -1,4 +1,5 @@
-@charset "UTF-8";
+
+ @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -33,16 +34,93 @@ body {
 }
 
 header {
-  background-color: yellow;
+  background-color:#eeeeee;
+  padding: 30px 160px 80px 160px;
 }
 
 main {
-  background-color: blue;
+  background-color: #ffffff;
 }
 
 footer {
-  background-color: pink;
+  background-color: #ffffff;
 }
 .first-blocks {
   width: 33%;
 }
+.container {
+ width: 100%;
+ max-width:900px;
+ margin:0 auto;
+}
+ul .header-photo {
+  width: 25%;
+  
+}
+
+.menu {
+  width: 75%;
+  float: right;
+}
+.menu li {
+  margin: 0 20px;
+}
+.services-block {
+  width: 33.3%;
+  float: left;
+ 
+}
+.clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.photo-block {
+  width: 33%;
+}
+.frend {
+  width: 70%;
+ 
+}
+.icon {
+  width: 30%;
+
+}
+.f-bl {
+  float: left;
+}
+.button {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  
+}
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.red {
+  background-color: #fb565a;
+}
+
+.green {
+  background-color: #00ca74;
+}
+
+.yellow {
+  background-color: #efc84a;
+}
+ .t-bl {
+  float: left;
+ }
+
+ .bl-one {
+  width: 70%;
+ }
+
+ .bl-two {
+
+  width: 30%;
+ }
