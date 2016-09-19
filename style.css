@@ -25,21 +25,15 @@ ol, ul {
   header li {
     display: inline-block;
   }
-body {
-  background-color: black;
-  color:red;
-  margin:20 px auto; 
-  width: 100%;
-  height: auto;
-}
 
 header {
-  background-color:#eeeeee;
-  padding: 30px 160px 80px 160px;
+  background-color: #eeeeee;
+  box-sizing: border-box;
 }
 
 main {
   background-color: #ffffff;
+  padding-top: 80px;
 }
 
 footer {
@@ -50,26 +44,39 @@ footer {
 }
 .container {
  width: 100%;
- max-width:900px;
+ max-width: 900px;
  margin:0 auto;
 }
 ul .header-photo {
   width: 25%;
   
 }
+.dis h2 {
+  width: 270px;
+}
 
 .menu {
   width: 75%;
   float: right;
+  padding-top: 60px;
 }
 .menu li {
   margin: 0 20px;
+  padding-left: 20px;
 }
 .services-block {
-  width: 33.3%;
+  
   float: left;
+  padding-right: 80px;
  
 }
+.top-bt {
+  text-align: center;
+}
+.top-bt, .services-block p {
+  width: 240px;
+}
+
 .clearfix:before {
   content: "";
   clear: both;
@@ -114,6 +121,7 @@ p {
 }
  .t-bl {
   float: left;
+  padding-bottom: 80px;
  }
 
  .bl-one {
@@ -123,4 +131,117 @@ p {
  .bl-two {
 
   width: 30%;
+ }
+ .button {
+  display: inline-block;
+ }
+ .bt-bl {
+  
+  float: left; 
+  margin-left: 160px;
+  border: 1px solid blue;
+
+
+ }
+ .adress {
+  
+  width: 240px;
+
+
+ }
+ .bt-bl1 {
+  width: 900px;
+ }
+ .dis h2, .t-bl h1, .frend h2 {
+   font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+ }
+ article .dis, .f-bl {
+ padding-top: 80px;
+ }
+ .services-block img, .services-block p, .ser-bl p, .ser-bl img{
+  padding-bottom: 30px;
+ }
+ .services-block h2, .ser-bl h2 {
+
+  font-size: 30px;
+  padding-bottom: 30px;
+
+ }
+ a {
+  text-decoration: none;
+ }
+ .t-bl {
+   padding-top: 160px;
+ }
+ .photos {
+  padding-bottom: 50px;
+ }
+ .header-photo {
+  padding-top: 30px;
+ }
+ .slide {
+  position: absolute;
+  top: 115px;
+  right: 70px;
+ }
+ .dis {
+  padding-bottom: 80px;
+ }
+
+ .left {
+    width: 30%;
+    float: left;
+ }
+
+ .right {
+   width: 70%;
+   float: right;
+ }
+
+ .right p, .left h3 {
+   font-size: 18px;
+ }
+
+ .welcome h1 {
+  font-size: 40px;
+    padding-left: 280px;
+    padding-bottom: 90px;
+    padding-top: 70px;
+ }
+
+ .bl-photo {
+   width: 100%;
+ }
+
+ .parts {
+ float: left;
+ margin-right: 80px;
+ margin-bottom: 80px;
+ }
+
+ .empty {
+  margin-bottom: 80px;
+ }
+
+ .centr-bt {
+   padding-top: 80px;
+   text-align: center;
+
+ }
+
+ .bt-bt {
+  border: 1px solid red;
+  padding: 10px 15px;
+ }
+ .sort {
+   padding-bottom: 22px;
+ }
+ .rang {
+  padding-top: 50px;
+ }
+
+ .adress h4, .adress p, .adress a{
+   margin: 30px 20px;
  }
