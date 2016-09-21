@@ -2,37 +2,39 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
         <title>Главная страница Нёрдс</title>
     </head>
     <body>
-        <header class="container clearfix">
-	        <img class="header-photo" src="img/nerds-top.png">
-	      	<nav class="menu">
+        <header class="clearfix">
+	        <div class="container"> 
+	        		<img class="header-photo" src="img/nerds-top.png">
+	      		<nav class="menu">
 	        	<ul>
-	        		<li>Студия</li>
-	        		<li>Клиенты</li>
-	        		<li>Магазин</li>
-	        		<li>Контакты</li>
-	        		<li>Корзина</li>
+	        		<li><a href="#">Студия</a></li>
+	        		<li><a href="#">Клиенты</a></li>
+	        		<li><a href="#">Магазин</a></li>
+	        		<li><a href="#">Контакты</a></li>
+	        		<li class="basket"><a href="#">Корзина</a></li>
 	        	</ul>
-	      	</nav>
+	      		</nav>
         		<article class="dis">
         			<h2>Долго, дорого, скурпулезно.</h2>
-        			<p>Математически выверенный дизайн</p>
-        			<p>для вашего сайта или приложения</p>
+        			<p class="top-cn">Математически выверенный дизайн для вашего сайта или приложения</p>
         			<a href="" class="button red top-bt">Узнать больше</a>
         		</article>
         		<article class="slide">
-        			<img src="img/slider1.png">
+        			
         		</article>
+        		</div>
         </header>
-        <main class="clearfix">
-        	<section class="container services">
+        <main>
+        	<section class="container line1 services">
         		<article class="services-block">
         			  		<img src="img/main-photo1.jpg">
         			    	<H2>Веб-сайты</H2>
-        			    	<p>Мир никогда не будет прежним после того, как увидит ваш сайт</p>
+        			    	<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
         			    	<a href="" class="button red">Заказать</a>
         		</article>
         		<article class="services-block">
@@ -49,43 +51,45 @@
              </article>
         		
         	</section>
-        	<section class="container studio">
+        	<section class="container studio clearfix">
         		 <article class="t-bl bl-one">
 	        		 	<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
 	        		 	<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 	        		 	<h6>Выполняем заказы на разработку:</h6>
 	        		 	<ul>
-	        		 		<li>Вэб-сайтов любой сложности</li>
-	        		 		<li>Мобильных приложений для iOS и Android</li>
-	        		 		<li>Слайдшоу и видео для корпоративных презентаций</li>
+	        		 		<li class="line">Вэб-сайтов любой сложности</li>
+	        		 		<li class="line">Мобильных приложений для iOS и Android</li>
+	        		 		<li class="line">Слайдшоу и видео для корпоративных презентаций</li>
 	        		 	</ul>
         		 </article>
         		 <article class="t-bl bl-two">
-        		    <img src="img/nerds-md.png">
-        		    <p>since 2004</p>
-        		    <h6>Как мы работаем</h6>
+        		    <div class="nerds-ph"><img src="img/nerds-md.png"></div>
+        		    <p><span>since 2004</span></p>
+        		    <h6>Как мы работаем:</h6>
         		    <ul>
-	        		 		<li>С самоотдачей 46%</li>
-	        		 		<li>Соблюдая сроки на 100%</li>
-	        		 		<li>По предоплате 50%</li>
+	        		 		<li class="line">С самоотдачей 46%</li>
+	        		 		<li class="line">Соблюдая сроки на 100%</li>
+	        		 		<li class="line">По предоплате 50%</li>
 	        		 	</ul>
 	        	 </article>
         	</section>
             <section class="container photos clearfix">
-            	<img src="img/block-1.png" class="photo-block">
-            	<img src="img/block-2.png" class="photo-block">
-            	<img src="img/block-3.png" class="photo-block">
+            	<div class="block-photo-bt ph1"><img src="img/block-1.png" class="photo-block"></div>
+            	<div class="block-photo-bt ph2"><img src="img/block-2.png" class="photo-block"></div>
+            	<div class="block-photo-bt ph3"><img src="img/block-3.png" class="photo-block"></div>
             </section>
             <section class="clearfix bt-bl1">
+            
             	<article class="bt-bl adress">
-            		<h4>Nerds Design Studio</h4>
-            		<p>350000, Краснодар, </p>
-            		<p>ул. Головатого, 100</p>
-            		<p>тел: +7(861)275-75-75</p>
-            		<a href="" class="button red">Напишите нам</a>
+            		<h4><span>Nerds</span> Design Studio</h4>
+            		<p>350000, Краснодар,
+            		ул. Головатого, 100</p>
+            	  <p>тел: +7(861)275-75-75</p>
+            		<a href="#" class="button red">Напишите нам</a>
             	</article>
+            
             	<article class="">
-            		<img src="img/nerds-bt.png">
+            		
             	</article>
             </section>
 				</main>
@@ -98,9 +102,27 @@
         	
         	  <article class="frend f-bl">
 	        		<h2>Давайте дружить, это выгодно!</h2>
-	        		<p>Скидка 10% для друзей из социальных сетей.</p>
+	        		<p class="front-fr">Скидка 10% для друзей из социальных сетей.</p>
 	        	
 	        	</article>
         </footer>
+        <section class="hidden">
+          	<div class="clearfix window">
+          		<form>
+          		  <label>Ваше имя:</label>
+          			<input class="name" type="text" name="name" value="Представьтесь пожалуйста">
+          			<label>Ваш e-mail:</label>
+          			<input class="email" type="e-mail" name="email" value="Для отправки ответа">
+          		</form>
+          	</div>
+        		<div class="bt-bottom">
+        		  <label>Текст письма:</label>
+        			<textarea>В свободной форме</textarea>
+        		</div>
+        		<div class="bt-bottom">
+        			<a class="button send-messige red" href="#">Отправить</a>
+        			<a class="button send-messige cancel gray" href="#">Отменить</a>
+        		</div>
+        </section>
     </body>
 </html>
