@@ -2,31 +2,61 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
         <title>Главная страница Нёрдс</title>
     </head>
     <body>
-        <header class="clearfix">
+        <header>
 	        <div class="container"> 
-	        		<img class="header-photo" src="img/nerds-top.png">
-	      		<nav class="menu">
-	        	<ul>
-	        		<li><a href="#">Студия</a></li>
-	        		<li><a href="#">Клиенты</a></li>
-	        		<li><a href="#">Магазин</a></li>
-	        		<li><a href="#">Контакты</a></li>
-	        		<li class="basket"><a href="#">Корзина</a></li>
-	        	</ul>
-	      		</nav>
-        		<article class="dis">
-        			<h2>Долго, дорого, скурпулезно.</h2>
-        			<p class="top-cn">Математически выверенный дизайн для вашего сайта или приложения</p>
-        			<a href="" class="button red top-bt">Узнать больше</a>
-        		</article>
-        		<article class="slide">
-        			
-        		</article>
+	        		
+	      		
+	        	<nav class="clearfix">
+	        	 <img class="header-photo" src="img/nerds-top.png">
+	        	 <div class="menu">
+		        	 <ul>
+		        		<li><a href="#">Студия</a></li>
+		        		<li><a href="#">Клиенты</a></li>
+		        		<li><a href="#">Магазин</a></li>
+		        		<li><a href="#">Контакты</a></li>
+		        		<li class="basket"><a href="#">Корзина</a></li>
+		        	</ul>
+		        	</div>
+	        	</nav>
+	        	<section class="slider">
+
+	        	   <input type="radio" name="pannel" id="slide1" checked>
+	        	   <input type="radio" name="pannel" id="slide2">
+	        	   <input type="radio" name="pannel" id="slide3">
+
+	        	   <div class="slider-controls">
+	        	   	<label for="slide1"></label>
+	        	   	<label for="slide2"></label>
+	        	   	<label for="slide3"></label>
+	        	   </div>
+
+	        		 <div class="slide-wrapper">
+
+		        		<div class="slide slide1">
+		        			<h2>Долго, дорого, скурпулезно.</h2>
+		        			<p class="top-cn">Математически выверенный дизайн для вашего сайта или приложения</p>
+		        			<a href="" class="button red top-bt">Узнать больше</a>
+		        		</div>
+		        		<div class="slide slide2">
+		        			<h2>Любите ли вы математику, как любим ее мы?</h2>
+		        			<p class="top-cn">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+		        			<a href="" class="button red top-bt">Узнать больше</a>
+		        		</div>
+		        		<div class="slide slide3">
+		        			<h2>Только наркотики, только хардкор!</h2>
+		        			<p class="top-cn">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+		        			<a href="" class="button red top-bt">Узнать больше</a>
+		        		</div>
+	        		 	
+	        		 </div>
+	        	</section>
+        	
         		</div>
         </header>
         <main>
@@ -34,19 +64,19 @@
         		<article class="services-block">
         			  		<img src="img/main-photo1.jpg">
         			    	<H2>Веб-сайты</H2>
-        			    	<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+        			    	<p class="world">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
         			    	<a href="" class="button red">Заказать</a>
         		</article>
         		<article class="services-block">
            					<img src="img/main-photo2.jpg">
         			    	<H2>Приложения</H2>
-        			    	<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        			    	<p class="top-10">Покорите топ-10 приложений в AppStore и Google Play</p>
         			      <a href="" class="button green">Заказать</a>
         		</article>
-            <article class="ser-bl">
+            <article class=" services-block">
                 		<img src="img/main-photo3.jpg">
         			    	<H2>Презентации</H2>
-        			    	<p>Вы даже не подрзреваете насколько вы изумительны!</p>
+        			    	<p class="amazin">Вы даже не подрзреваете насколько вы изумительны!</p>
         			      <a href="" class="button yellow">Заказать</a>
              </article>
         		
@@ -82,8 +112,7 @@
             
             	<article class="bt-bl adress">
             		<h4><span>Nerds</span> Design Studio</h4>
-            		<p>350000, Краснодар,
-            		ул. Головатого, 100</p>
+            		<p>350000, Краснодар, ул. Головатого, 100</p>
             	  <p>тел: +7(861)275-75-75</p>
             		<a href="#" class="button red">Напишите нам</a>
             	</article>
@@ -94,13 +123,20 @@
             </section>
 				</main>
         <footer class="footer-block container clearfix">
-            <article class="icon f-bl">
-            	<img src="img/vk.png">
-            	<img src="img/fb.png">
-            	<img src="img/inst.png">
+            <article class="f-bl">
+            	<div class="icon vk">
+            			<img src="img/vk.png">
+            	</div>
+            	
+              <div class="icon fb">
+              		<img src="img/fb.png">
+              </div>
+            	<div class="icon inst">
+            			<img src="img/inst.png">
+            	</div>
             </article>
         	
-        	  <article class="frend f-bl">
+        	  <article class="frend">
 	        		<h2>Давайте дружить, это выгодно!</h2>
 	        		<p class="front-fr">Скидка 10% для друзей из социальных сетей.</p>
 	        	
@@ -109,14 +145,19 @@
         <section class="hidden">
           	<div class="clearfix window">
           		<form>
-          		  <label>Ваше имя:</label>
-          			<input class="name" type="text" name="name" value="Представьтесь пожалуйста">
-          			<label>Ваш e-mail:</label>
-          			<input class="email" type="e-mail" name="email" value="Для отправки ответа">
+          		  <div class="hidden-form name">
+          		  	<div class="your-name"><label>Ваше имя:</label></div>
+          				<div><input type="text" name="name" value="Представьтесь пожалуйста">
+          				</div>
+          			</div>
+          			<div class="hidden-form email">
+          				<div class="your-email"><label>Ваш e-mail:</label></div>
+          				<div><input  type="e-mail" name="email" value="Для отправки ответа"></div>
+          			</div>
           		</form>
           	</div>
         		<div class="bt-bottom">
-        		  <label>Текст письма:</label>
+        		   <div class="text-letter"><label>Текст письма:</label></div>
         			<textarea>В свободной форме</textarea>
         		</div>
         		<div class="bt-bottom">
@@ -124,5 +165,6 @@
         			<a class="button send-messige cancel gray" href="#">Отменить</a>
         		</div>
         </section>
+        <script type="text/javascript"></script>
     </body>
 </html>

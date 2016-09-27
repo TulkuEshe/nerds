@@ -2,29 +2,43 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
         <title>Каталог Нёрдс</title>
     </head>
     <body>
-    <header class="container clearfix">
-	        <img class="header-photo" src="img/nerds-top.png">
-	      	<nav class="menu">
-	        	<ul>
-	        		<li>Студия</li>
-	        		<li>Клиенты</li>
-	        		<li>Магазин</li>
-	        		<li>Контакты</li>
-	        		<li>Корзина</li>
+    <header>
+	        <div class="container"> 
+	        		<img class="header-photo" src="img/nerds-top.png">
+	      		<nav class="menu">
+	        	 <div class="clearfix">
+	        	 <ul>
+	        		<li><a href="#">Студия</a></li>
+	        		<li><a href="#">Клиенты</a></li>
+	        		<li><a href="#">Магазин</a></li>
+	        		<li><a href="#">Контакты</a></li>
+	        		<li class="basket"><a href="#">Корзина</a></li>
 	        	</ul>
-	      	</nav>
+	        	</div>
+	      		</nav>
 
             <article class="welcome"><h1>Добро пожаловать в магазин готовых макетов</h1></article>
 	</header>
-    <main class="container clearfix">
+    <main class="container">
+
+    
+    		<article class="markets">
+    		
+    			<a href="" class="sort rang">Стоимость:</a> 
+	    	    <a href="">Сортировать:</a>
+	    		<a class="dotted" href="">По цене</a>
+	    		<a class="dotted" href="">По типу</a>
+	    		<a class="dotted" href="">По функционалу</a>
+	    	</article>
+	   
     	<section class="left">
-    		<article>
-    			<h3 class="sort rang">Стоимость:</h3>
+
     			<img src="http://placehold.it/240x95">
     		</article>
     		<article>
@@ -50,55 +64,63 @@
     			</form>
     		</article>
     	</section>
+    
+    	<div class="clearfix">
     	<section class="right">
-	    	<article>
-	    	    <p>Сортировать:</p>
-	    		<a href="">По цене</a>
-	    		<a href="">По типу</a>
-	    		<a href="">По функционалу</a>
-	    	</article>
-	    	<article class="bl-photo">
-	    		<div class="parts">
+  
+	    	
+	    		<div class="parts top-color">
 	    			<img  src="img/cat-top1.png">
 	    		</div>
-	    		<div class="empty">
+	    		<div class="empty top-color">
 	    			<img src="img/cat-top2.png">
 	    		</div>
-	    	</article>
-	    	<article>
-	    		<div class="parts">
+	    	
+	    		<div class="parts top-color">
 	    			<img src="img/cat-top3.png">
 	    		</div>
-	    		<div class="empty">
+	    		<div class="empty top-color">
 	    			<img src="img/cat-top4.png">
 	    		</div>
-	    	</article>
-	    	<article>
-	    		<div class="parts">
+	    	
+	    	
+	    		<div class="parts top-color">
 	    			<img src="img/cat-top5.png">
 	    		</div>
-	    		<div>
+	    		<div class="top-color">
 	    			<img src="img/cat-top6.png">
 	    		</div>
-	    	</article>
-	    	<article class="centr-bt">
-	    		<a href="" class="bt-bt">1</a>
+	    	
+	
+	    	 <div class="">	        
+	    <section class="centr-bt">
+	    		<a href="" class="activ-bt">1</a>
 	    		<a href="" class="bt-bt">2</a>
 	    		<a href="" class="bt-bt">3</a>
 	    		<a href="" class="bt-bt">Следующая</a>
-	    	</article>
+	    	</section>
+	    	</div>
 	    </section>
+	   </div>
+
     </main>
     <footer class="footer-block container clearfix">
-            <article class="icon f-bl">
-            	<img src="http://placehold.it/60x60">
-            	<img src="http://placehold.it/60x60">
-            	<img src="http://placehold.it/60x60">
+            <article class="f-bl">
+            	<div class="icon vk">
+            			<img src="img/vk.png">
+            	</div>
+            	
+              <div class="icon fb">
+              		<img src="img/fb.png">
+              </div>
+            	<div class="icon inst">
+            			<img src="img/inst.png">
+            	</div>
             </article>
         	
-        	  <article class="frend f-bl">
+        	  <article class="frend">
 	        		<h2>Давайте дружить, это выгодно!</h2>
-	        		<p>Скидка 10% для друзей из социальных сетей.</p>
+	        		<p class="front-fr">Скидка 10% для друзей из социальных сетей.</p>
 	        	
 	        	</article>
         </footer>
