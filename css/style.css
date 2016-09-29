@@ -36,6 +36,7 @@ header {
 main {
   background-color: #ffffff;
   padding-top: 80px;
+  
 }
 
 footer {
@@ -65,6 +66,7 @@ ul .header-photo {
   width: 75%;
   float: right;
   padding-top: 60px;
+  padding-bottom: 80px;
 }
 .menu li {
         margin: 0 22px;
@@ -159,14 +161,21 @@ p {
   display: inline-block;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 12px;
+  text-align: center;
  }
  .bt-bl {
   
   margin-left: 160px;
-  
 
+ }
 
+ .order {
+  padding: 15px 40px;
+ }
+
+ .top-bt {
+  padding: 15px 75px;
  }
  .adress {
   padding: 25px 20px;
@@ -264,8 +273,9 @@ p {
 
  .block-sites {
    display: inline-block;
-   width: 47%;
+       width: 240px;
    margin-bottom: 80px;
+   margin-right: 70px;
  }
 
 
@@ -293,6 +303,9 @@ p {
 
  .adress h4, .adress p {
    color: #686d6f;
+ }
+ .adress p {
+  line-height: 1.4em;
  }
 
  .nerds-ph {
@@ -328,9 +341,10 @@ p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.services-block p, .t-bl p, .line, bt-bl p {
+.services-block p, .t-bl p, .line {
   font-weight: 300;
   color: #686d6f;
+  line-height: 1.4em;
 }
 
 .t-bl h6, .bt-bl h4 {
@@ -445,6 +459,8 @@ p {
  box-sizing: border-box;
   border-color: #ffffff;
   border: 2px solid red;
+ box-shadow: -1px -4px 10px 7px #c8c8c8;
+ margin-bottom: 100px;
 }
 .bl-two span:before{
     width: 70px;
@@ -509,8 +525,7 @@ p {
   }
 
   .send-messige {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding: 15px 75px;
     margin-top: 55px;
     margin-bottom: 55px; 
   }
@@ -582,7 +597,7 @@ p {
 
 .markets a {
   display: inline-block;
-  width: 14%;
+ 
 
 }
 
@@ -592,6 +607,8 @@ p {
 .dotted {
   border-bottom: 1px dotted #00ca74;
   color: #e4e4e4;
+  margin-right: 40px;
+  margin-left: 35px;
 }
 
 .dotted:hover {
@@ -625,19 +642,20 @@ p {
   display: none;
 }
 
-.network:before {
+.network label:before {
   content: "";
   background-size: 100%;
   background-image: url(../img/radio.png);
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: block;
   left: 0px;
+  top: -5px;
   color: #c1c1c1;
 }
 
- .peculiarity:before {
+ .peculiarity label:before {
   background-image: url(../img/checkbox.png);
   content: "";
   background-size: 100%;
@@ -647,6 +665,7 @@ p {
   display: block;
   left: 0px;
   color: #c1c1c1;
+   top: -5px;
 }
  
 
@@ -669,19 +688,236 @@ p {
     margin-bottom: 20px
   }
   .slider {
-    display: inline-block;
     width: 100%;
+    font-size: 0;
   }
 
- #slide1:checked ~ .slade1 {
-     margin-left: 0;
+ #slide1:checked ~ .slide-wrapper {
+     left: 0;
+     position: relative;
+     
+
 }
-#slide2:checked ~ .slade2 {
+#slide2:checked ~ .slide-wrapper {
 
-  margin-left: 900px;
+   left: -900px;
+   position: relative;
+    
+   
 }
 
-#slide3:checked ~ .slade3 {
+#slide3:checked ~ .slide-wrapper {
+    left: -1800px;
+    position: relative;
+     
+   
+}
 
-  margin-left: 1800px;
+.slide {
+
+}
+.slide1, .slide2, .slide3 {
+  position: relative;
+}
+
+.slide {
+  background-repeat: no-repeat;
+   min-height: 350px;
+    background-position: 100% 18%;
+    padding-top: 55px;
+    
+}
+
+
+.slide1 {
+  background-image: url(../img/slider1.png);
+  
+}
+.slide2 {
+background-image: url(../img/slider2.png);
+
+}
+
+.slide3 {
+  background-image: url(../img/slider3.png);
+  background-position: 100% 100%;
+
+}
+.slide .top-title {
+ padding-top: 25px;
+ padding-bottom: 25px;
+ line-height: 1.4em;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide h2 {
+  font-size: 36px;
+
+  font-weight: bold;
+}
+.slider {
+ overflow: hidden;
+
+}
+
+.block-text {
+  width: 52%;
+  white-space: normal;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider-controls label:before {
+   content: "";
+   display: inline-block;
+    width: 100%;
+    height: 100%;
+   border-radius: 50%;
+   background-color: #ffffff;
+   cursor: pointer;
+   
+}
+.slider-controls label {
+  margin: 0 5px;
+  position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 5px;
+}
+
+#slide1:checked ~ .slider-controls label[for="slide1"]:after,
+#slide2:checked ~ .slider-controls label[for="slide2"]:after,
+#slide3:checked ~ .slider-controls label[for="slide3"]:after {
+  content: "";
+   display: inline-block;
+   width: 1.1em;
+   height: 1.1em;
+   border-radius: 50%;
+   background-color: #c1c1c1;
+   cursor: pointer;
+   position: absolute;
+    top: 0.4em;
+    left: 0.4em;
+}
+.adress {
+  background-color: #ffffff;
+
+}
+.bt-bl1 {
+  background-image: url(../img/map.png);
+  height: 415px;
+  margin-top: 85px;
+  position: relative;
+}
+
+.bascket:hover {
+  background-color: #fb565a;
+}
+
+.hidden {
+  position: fixed;
+  transform: translateX(-50%)
+   -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+    top: 50%;
+  background: #ffffff
+}
+
+.pop-up-window {
+  width: 210px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid red;
+  padding: 35px 35px 30px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.sun {
+  text-align: center;
+  font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.buy {
+  display: block;
+}
+
+ .internet-shop {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: 100;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.slider {
+  position: relative;
+}
+
+.network input[type="radio"]:checked + label:before {
+ content: "";
+ display: block;
+ background-image: url(../img/radio-checked.png);
+ width: 25px;
+ height: 25px;
+}
+
+.peculiarity input[type="checkbox"]:checked + label:before {
+  width: 30px;
+  height: 25px;
+  content: "";
+  display: block;
+  background-image: url(../img/checkbox-checked.png);
+
+}
+..block-sites {
+  position: relative;
+}
+.cap-grey {
+  width: 240px;
+  height:30px;
+  background-color: #f1f1f1;
+}
+
+.block-sites:hover + .cap-grey {
+  background-color: #797979;
+}
+
+.block-sites:hover ~ .pop-up-window {
+  width: 210px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid red;
+  padding: 35px 35px 30px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.white-dots {
+ display: inline-block;
+width: 10px;
+  height: 10px;
+   border-radius: 50%;
+  background-color: red;
+  left: 1px;
+  top: 1px;
+}
+
+.pop-up-window {
+
+  display: none;
 }
