@@ -1,187 +1,226 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
-        <title>Каталог Нёрдс</title>
-    </head>
-    <body>
-    <header>
-	        <div class="container"> 
-	        		<img class="header-photo" src="img/nerds-top.png">
-	      		<nav class="menu">
-	        	 <div class="clearfix">
-	        	 <ul>
-	        		<li><a href="#">Студия</a></li>
-	        		<li><a href="#">Клиенты</a></li>
-	        		<li><a href="#">Магазин</a></li>
-	        		<li><a href="#">Контакты</a></li>
-	        		<li class="basket"><a href="#">Корзина</a></li>
-	        	</ul>
-	        	</div>
-	      		</nav>
-
-            <article class="welcome"><h1>Добро пожаловать в магазин готовых макетов</h1></article>
+<head>
+		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
+		<title>Каталог Нёрдс</title>
+</head>
+<body>
+	<header>
+		<div class="container"> 
+			<img class="header-photo" src="img/nerds-top.png">
+			<nav class="menu">
+					<div class="clearfix">
+						<ul>
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li class="active-shop"><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li class="basket"><a href="#">Корзина</a></li>
+						</ul>
+					</div>
+			</nav>
+			<article class="welcome"><h1>Добро пожаловать в магазин готовых макетов</h1></article>
+		</div>
 	</header>
-    <main class="container">
+	<main class="container">
+			<div class="clearfix first-block">
+				<section class="left">
+		           <div class="sort rang">
+		           		<a href="#">Стоимость:</a>
+		           </div> 
+							 	<div class="block-cost">
+							 			<div class="runner">
+							 				<div class="roller"></div>
+							 				<div class="roller-line"></div
+							 				<div class="roller roller2"></div>
+							 			</div>
+									<div class="input-block">
+										<form action="/echo" method="post">
+										      <label for="text1">от</label>
+												<input type="text" name="number" value="1" id="text1">
+													<label for="text2">до</label>
+												<input type="text" name="number" value="15000" id="text2">
+										</form>
+									</div>
+								</div>
+						<article>
+							<h3 class="sorting">Сетка:</h3>
+							<ul>
+									<li class="network">
+										<input type="radio" name="mesh" id="network-type1" checked>
+										<label for="network-type1">Адаптивная</label>
+									</li>
+									<li class="network">
+										<input type="radio" name="mesh" id="network-type2">
+										<label for="network-type2">Фиксированная</label>
+									</li>
+									<li class="network">
+										<input type="radio" name="mesh" id="network-type3">
+										<label for="network-type3">Резиновая</label>
+									</li>
+							</ul>
+						</article>
+						<article>
+							<h3 class="features">Особенности:</h3>
+							<ul>
+								<li class="peculiarity"><input type="checkbox" name="trait" id="peculiarity-benefit1" checked><label for="peculiarity-benefit1">Слайдер</label></li>
+								<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit2"><label for="peculiarity-benefit2">Блок приемуществ</label></li>
+								<li class="peculiarity"><input type="checkbox" name="trait" id="peculiarity-benefit3" checked><label for="peculiarity-benefit3">Новости</label></li>
+								<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit4"><label for="peculiarity-benefit4">Галерея</label></li>
+								<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit5"><label for="peculiarity-benefit5">Корзина</label></li>
+							</ul>
+						</article>
+				</section>
+			</div>
+			<div class="clearfix second-block">
+				<section class="right">
+              <div class="markets dotted-activ">
+								<a href="#" class="separate">Сортировать:</a>
+							
+								<a class="dotted" href="">По цене</a>
+								<a class="dotted" href="">По типу</a>
+								<a class="dotted" href="">По функционалу</a>
+							</div>
 
-    
-    		<article class="markets">
-    		
-    			<a href="" class="sort rang">Стоимость:</a> 
-	    	    <a href="">Сортировать:</a>
-	    		<a class="dotted" href="">По цене</a>
-	    		<a class="dotted" href="">По типу</a>
-	    		<a class="dotted" href="">По функционалу</a>
-	    	</article>
-	   
-    	<div class="clearfix">
-	    	<section class="left">
+							<div class="triangle-block">
+								<div class="triangle triangle-bottom"></div>
+									
+								<div class="triangle triangle-top"></div>								
+							</div>
+							<div class="block-sites">
+								<div class="cap-grey">
+									<ul>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+									</ul>
+								</div>
+								<img  src="img/cat-top1.png">
+								<section class="pop-up-window">
+									<h2 class="sun">Sunset</h2>
+									<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+									<a href="" class="button buy red">10 000 р.</a>
+								</section>
+							</div>
 
-	    			<img src="http://placehold.it/240x95">
-	    			<div><p>от</p><p>до</p></div>
-	    		</article>
-	    		<article>
-	    			<h3 class="sorting">Сетка:</h3>
-	    			
-	    			    <ul>
-		    				<li class="network">
-		    					<input type="radio" name="mesh" id="network-type1" checked>
-		    					<label for="network-type1">Адаптивная</label></li>
-		    				<li class="network">
-		    					<input type="radio" name="mesh" id="network-type2">
-		    					<label for="network-type2">Фиксированная</label></li>
-		    				<li class="network">
-		    					<input type="radio" name="mesh" id="network-type3">
-		    					<label for="network-type3">Резиновая</label></li>
-	    				</ul>
-	    			
-	    		</article>
-	    		<article>
-	    			<h3 class="features">Особенности:</h3>
-	    			
-	    			    <ul>
-		    				<li class="peculiarity"><input type="checkbox" name="trait" id="peculiarity-benefit1" checked><label for="peculiarity-benefit1">Слайдер</label></li>
-		    				<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit2"><label for="peculiarity-benefit2">Блок приемуществ</label></li>
-		    				<li class="peculiarity"><input type="checkbox" name="trait" id="peculiarity-benefit3" checked><label for="peculiarity-benefit3">Новости</label></li>
-		    				<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit4"><label for="peculiarity-benefit4">Галерея</label></li>
-		    				<li class="peculiarity"><input type="checkbox" name="trait"  id="peculiarity-benefit5"><label for="peculiarity-benefit5">Корзина</label></li>
-		    			</ul>
-	    			
-	    		</article>
-	    	</section>
-	    
-	    	
-	    	<section class="right">
-	  
-		    	
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    			<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    			<img  src="img/cat-top1.png">
-		    		</div>
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    			<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    		</div>
-		    			<img src="img/cat-top2.png">
-		    		</div>
-		    	
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    			<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    		</div>
-		    			<img src="img/cat-top3.png">
-		    		</div>
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    			<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    		</div>
-		    			<img src="img/cat-top4.png">
-		    		</div>
-		    	
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    		<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    		</div>
-		    			<img src="img/cat-top5.png">
-		    		</div>
-		    		<div class="block-sites">
-		    		<div class="cap-grey">
-		    			<ul>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    				<li class="white-dots"></li>
-		    			</ul>
-		    		</div>
-		    		</div>
-		    			<img src="img/cat-top6.png">
-		    		</div>
-		    
+							<div class="block-sites">
+								<div class="cap-grey">
+									<ul>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+									</ul>
+								</div>
+
+								<img src="img/cat-top2.png">
+								<section class="pop-up-window">
+									<h2 class="sun">Sunset</h2>
+									<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+									<a href="" class="button buy red">10 000 р.</a>
+								</section>
+							</div>
+
+							<div class="block-sites">
+								<div class="cap-grey">
+									<ul>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+									</ul>
+								</div>
+
+								<img src="img/cat-top3.png">
+								<section class="pop-up-window">
+									<h2 class="sun">Sunset</h2>
+									<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+									<a href="" class="button buy red">10 000 р.</a>
+								</section>
+							</div>
+
+							<div class="block-sites">
+								<div class="cap-grey">
+									<ul>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+										<li class="white-dots"></li>
+									</ul>
+								</div>
+							
+							<img src="img/cat-top4.png">
+							<section class="pop-up-window">
+									<h2 class="sun">Sunset</h2>
+									<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+									<a href="" class="button buy red">10 000 р.</a>
+								</section>
+						</div>
+						<div class="block-sites">
+							<div class="cap-grey">
+								<ul>
+									<li class="white-dots"></li>
+									<li class="white-dots"></li>
+									<li class="white-dots"></li>
+								</ul>
+							</div>
+					
+						<img src="img/cat-top5.png">
+						<section class="pop-up-window">
+									<h2 class="sun">Sunset</h2>
+									<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+									<a href="" class="button buy red">10 000 р.</a>
+								</section>
+					</div>
+					<div class="block-sites">
+
+						<div class="cap-grey">
+							<ul>
+								<li class="white-dots"></li>
+								<li class="white-dots"></li>
+								<li class="white-dots"></li>
+							</ul>
+						</div>
+					
+					  <img src="img/cat-top6.png">
+						<section class="pop-up-window">
+								<h2 class="sun">Sunset</h2>
+								<p class="internet-shop">Интернет-магазин с личным интернетом</p>
+								<a href="" class="button buy red">10 000 р.</a>
+						</section>
+			  	</div>
 		
-		    	 <div class="">	        
-		    <section class="centr-bt">
-		    		<a href="" class="activ-bt">1</a>
-		    		<a href="" class="bt-bt">2</a>
-		    		<a href="" class="bt-bt">3</a>
-		    		<a href="" class="bt-bt">Следующая</a>
-		    	</section>
-		    	</div>
-		    </section>
+	    </div>	        
+						<section class="centr-bt">
+						  <ul>
+									<li><a href="#" class="activ-bt bt-bt">1</a></li>
+									<li><a href="#" class="bt-bt">2</a></li>
+									<li><a href="#" class="bt-bt">3</a></li>
+									<li><a href="#" class="bt-bt">Следующая</a></li>
+							</ul>
+						</section>
+    </section>
+  </div>
+</main>
+<footer class="footer-block container clearfix">
+	<article class="f-bl">
+		<div class="icon vk">
+			<img src="img/vk.png">
 		</div>
 
-    </main>
-    <footer class="footer-block container clearfix">
-            <article class="f-bl">
-            	<div class="icon vk">
-            			<img src="img/vk.png">
-            	</div>
-            	
-              <div class="icon fb">
-              		<img src="img/fb.png">
-              </div>
-            	<div class="icon inst">
-            			<img src="img/inst.png">
-            	</div>
-            </article>
-        	
-        	  <article class="frend">
-	        		<h2>Давайте дружить, это выгодно!</h2>
-	        		<p class="front-fr">Скидка 10% для друзей из социальных сетей.</p>
-	        	
-	        	</article>
-        </footer>
-        <section class="pop-up-window">
-        	<h2 class="sun">Sunset</h2>
-        	<p class="internet-shop">Интернет-магазин с личным интернетом</p>
-        	<a href="" class="button buy red">10 000 р</a>
-        </section>
-    </body>
+		<div class="icon fb">
+			<img src="img/fb.png">
+		</div>
+		<div class="icon inst">
+			<img src="img/inst.png">
+		</div>
+	</article>
+
+	<article class="frend">
+		<h2>Давайте дружить, это выгодно!</h2>
+		<p class="front-fr">Скидка 10% для друзей из социальных сетей.</p>
+
+	</article>
+</footer>
+</body>
 </html>
