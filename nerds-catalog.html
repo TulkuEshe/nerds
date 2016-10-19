@@ -39,10 +39,10 @@
 							 			</div>
 									<div class="input-block">
 										<form action="/echo" method="post">
-										      <label for="text1">от</label>
-												<input type="text" name="number" value="1" id="text1">
-													<label for="text2">до</label>
-												<input type="text" name="number" value="15000" id="text2">
+										      <label for="input1">от</label>
+												<input type="number" name="number" value="1" id="input1">
+													<label for="input2">до</label>
+												<input type="number" name="number" value="15000" id="input2">
 										</form>
 									</div>
 							 </div>
@@ -192,12 +192,46 @@
 									<li><a href="#" class="activ-bt bt-bt">1</a></li>
 									<li><a href="#" class="bt-bt">2</a></li>
 									<li><a href="#" class="bt-bt">3</a></li>
-									<li><a href="#" class="bt-bt">Следующая</a></li>
+									<li><a href="#" class="bt-bt last-button">Следующая</a></li>
 							</ul>
 						</section>
     </section>
+
   </div>
-</main>
+</main> 
+<section class="clearfix bt-bl1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.52337931348!2d37.59545687833829!3d55.74940986522781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sbg!4v1476095624173" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            	<article class="bt-bl adress">
+            		<h4><span>Nerds</span> Design Studio</h4>
+            		<p>350000, Краснодар, ул. Головатого, 100</p>
+            	  <p>тел: +7(861)275-75-75</p>
+            		<a href="#" class="button red">Напишите нам</a>
+            	</article>
+            
+            </section>
+            <section class="hidden show-block">
+          	<div class="clearfix window">
+          		<form>
+          		  <div class="hidden-form name">
+          		  	<div class="your-name"><label>Ваше имя:</label></div>
+          				<div><input type="text" name="name" value="Представьтесь пожалуйста">
+          				</div>
+          			</div>
+          			<div class="hidden-form email">
+          				<div class="your-email"><label>Ваш e-mail:</label></div>
+          				<div><input  type="e-mail" name="email" value="Для отправки ответа"></div>
+          			</div>
+          		</form>
+          	</div>
+        		<div class="bt-bottom">
+        		   <div class="text-letter"><label>Текст письма:</label></div>
+        			<textarea>В свободной форме</textarea>
+        		</div>
+        		<div class="bt-bottom">
+        			<a class="button send-messige red" href="#">Отправить</a>
+        			<a class="button send-messige cancel gray" href="#">Отменить</a>
+        		</div>
+        </section>
 <footer class="footer-block container clearfix">
 	<article class="f-bl">
 		<div class="icon vk">
@@ -218,5 +252,15 @@
 
 	</article>
 </footer>
+     <script type="text/javascript">
+     	 var input1 = document.querySelector("#input1");
+     	 var input2 = document.querySelector("#input2");
+
+      input1.addEventListener('keyup', function(e) {
+      var numleft = this.value
+      lindlefstyle.left = '10%';
+      });
+
+     </script>
 </body>
 </html>

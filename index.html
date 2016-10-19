@@ -5,6 +5,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext" rel="stylesheet">
+       <!--  <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
         <title>Главная страница Нёрдс</title>
     </head>
     <body>
@@ -116,17 +117,20 @@
             	<div class="block-photo-bt ph3"><img src="img/block-3.png" class="photo-block"></div>
             </section>
             <section class="clearfix bt-bl1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574855.751550229!2d37.07208252751822!3d55.74928998619036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sbg!4v1476895513847" width="100%" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
             
             	<article class="bt-bl adress">
             		<h4><span>Nerds</span> Design Studio</h4>
             		<p>350000, Краснодар, ул. Головатого, 100</p>
             	  <p>тел: +7(861)275-75-75</p>
-            		<a href="#" class="button red">Напишите нам</a>
+            		<a href="#" class="button login red">Напишите нам</a>
             	</article>
             
             </section>
-            <section class="hidden">
+            <section class="contact-form show-block hidden">
+             <div class="cross">×</div>
           	<div class="clearfix window">
+
           		<form>
           		  <div class="hidden-form name">
           		  	<div class="your-name"><label>Ваше имя:</label></div>
@@ -145,9 +149,10 @@
         		</div>
         		<div class="bt-bottom">
         			<a class="button send-messige red" href="#">Отправить</a>
-        			<a class="button send-messige cancel gray" href="#">Отменить</a>
+        			<a class="button send-messige cancel gray remove" href="#">Отменить</a>
         		</div>
         </section>
+
 				</main>
         <footer class="footer-block container clearfix">
             <article class="f-bl">
@@ -170,6 +175,28 @@
 	        	</article>
         </footer>
         
-        <script type="text/javascript"></script>
+        <script>
+         var link = document.querySelector(".login");
+         var popup = document.querySelector(".contact-form");
+         var remove = document.querySelector(".remove");
+         var cancel = document.querySelector(".cross");
+
+         link.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.remove("hidden");
+            });
+        
+        remove.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.add("hidden");
+            }); 
+
+        cancel.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.add("hidden");
+            }); 
+
+        </script>
+       
     </body>
 </html>
